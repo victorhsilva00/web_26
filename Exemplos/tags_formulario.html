@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+
+<h1>Exemplos de formularios</h1>
+
+<!-- O metodo deve ser post -->
+<form action="" method="get">
+<!-- Exemplo 1 de um label e input -->
+    <label>
+        Nome:
+<!-- O name deve começar com form_ -->
+        <input name="form_nome" type="text" placeholder="Digite seu nome" required>
+        <br>
+    </label>
+    <br>
+
+<!-- Exemplo 2 de um label e input -->
+    <label for="input 2">Sobrenome:<label>
+    <input id="input 2" name="sobrenome" type="texte>" placeholder="Ex: Silva"<label>
+
+    <br>
+    <br>
+
+<label>
+    Idade
+    <input name="form_idade" type="number" placeholder="Ex: 10"<label>
+</label>
+    <br>
+    <br>
+
+<label>
+    Data de nascimento
+    <input name="form_data_nascimento" type="date">
+</label>
+
+     <br>
+     <br>
+
+<label>
+    Senha
+    <input name="form_senha" type="password" placeholder="Ex: 1234"<label>
+    <br>
+    <br>
+    </label>
+
+     <label>Qual o ano do seu Ensino Médio? <label>
+     <br>
+
+<!-- No input radio os names devem ser iguais-->
+
+     <label>
+         <input name="form_em" value="1" type="radio">
+         1 EM
+     </label>
+
+     <label>
+         <input name="form_em" value="2" type="radio">
+         2 EM
+     </label>
+
+     <label>
+         <input name="form_em" value="3" type="radio">
+         3 EM
+     </label>
+    <br><br>
+
+     <label>Qual a sua carteira de motorista?<label><br>
+         <input name="form_carro" type="checkbox">
+         Carro
+
+         <input name="form_moto" type="checkbox">
+          Moto
+          <br>
+
+     <label><br>
+         Comentário:<br>
+         <textarea name="form_comentario"rows="10" cols="50"></textarea>
+     </label>
+         <br>
+
+         <br>
+     <label>
+         Cidade:
+         <select> name="form_cidade"
+             <option value="guararapes">Guararapes<option>
+             <option value="aracatuba">Araçatuca<option>
+             <option value="valparaiso">Valparaíso<option>
+         </select>
+     </label>
+         <br>
+         <br>
+
+<!-- Sempre vai ser submit para salvar -->
+         <br>
+    <button type="submit">Salvar</button>
+    <button type="reset">Limpar</button>
+</form>
+
+</body>
+</html>
